@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Webpage</title>
     <style>
-        div>p {
+        div >p {
             color: pink;
         }
+        /* p {
+          color: blue;
+        } */
         body { font-family: sans-serif; margin: 0;  }
         header, footer { background-color: #f3f3f3; padding: 20px; text-align: center; }
         nav { background: #333; padding: 10px 0; }
@@ -48,18 +51,22 @@ footer {
     text-decoration: underline;
 
   }
-
-  a:visited{
-   
-    color: blueviolet;
-   
-
+  a:hover{
+    color: orange;
   }
+
   a:active{
 
     color: green;
 
   }
+  .box-model {
+    width: 200px; /* Width of the content area */
+    padding: 20px; /* Padding around the content */
+    border: 5px solid #333; /* Border around the padding */
+    margin: 30px; /* Margin around the border */
+    background-color: #f0f0f0; /* Background color of the content area */
+}
 table, th, td {
   border:1px solid black;
 }
@@ -102,8 +109,8 @@ table, th, td {
         <div id="mydiv">
             <h3>Headings and Paragraphs</h3>
 
-            <h4>Hello, I'm h4 </h4>
-            <h5>I'm h5</h5>
+           <h4>Hello, I'm h4 </h4>
+             <h5>I'm h5</h5>
             <h6>How small can I get! </h6>
             <span> 
             <p>I'm a p element, my immediate parent is span and I have a div parent too!!! 
@@ -177,7 +184,10 @@ table, th, td {
             </a>        </div>
         <div id="mydiv">
             <h3>Links</h3>
-            <p>This is another paragraph in the second article of the first section.</p>
+            <a href='https:/bing.com' type="text/html" >Bing</a>
+            <a href='https:/google.com' type="text/html" >Google</a>
+            <a href='https:/yandex.com' type="text/html" >Yandex</a>
+
         </div>
 
     </section>
@@ -186,7 +196,9 @@ table, th, td {
         <h2>Section 2</h2>
         <article>
             <h3>CSS Box Model </h3>
-            <p>This is a paragraph in the first article of the first section.</p>
+            <body>
+              <div class="box-model">Content goes here</div>
+          </body>
             <h3>FlexBox </h3>
             <div class="flex-container-boxes">
                 <div class="box" style="background-color: green;">Box 1</div>
